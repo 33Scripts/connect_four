@@ -76,6 +76,6 @@ class Game:
                 continue
 
         # Ask if players want to play again
-        if input("Would you like to play again? Y/n: ").upper() == "Y":
+        if input("Would you like to play again? Y/n: ").lower() == "y":
             self.board.clear_board()
             self.play()

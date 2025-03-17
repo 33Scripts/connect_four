@@ -1,6 +1,6 @@
 [project]
 name = "connect-four"
-version = "0.1.0"
+version = "1.0.0"
 description = "A simple terminal Connect Four game."
 authors = [
     {name = "Steven Sullivan <spatrick0710@gmail.com>"}
