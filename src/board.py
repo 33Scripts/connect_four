@@ -29,12 +29,13 @@ class Board:
         self.token = "O"
         self.board = [[self.empty for _ in range(columns)] for _ in range(rows)]
 
-    def drop_piece(self, col, color):
+    def drop_piece(self, col, color, players=None):
         """Drop a colored piece in the specified column with animation.
 
         Args:
             col (int): The column index to drop the piece in.
             color (str): The color code for the player's piece.
+            players (list, optional): List of Player objects to display during animation.
 
         Returns:
             bool: True if the piece was successfully dropped, False otherwise.
@@ -58,7 +59,7 @@ class Board:
                 # Place piece at the current row
                 self.board[row][col] = color
                 clear_screen()
-                self.print_board()
+                self.print_board(players)
                 sleep(0.1)
 
             return True
@@ -142,12 +143,20 @@ class Board:
                     return False
         return True
 
-    def print_board(self):
+    def print_board(self, players=None):
         """Display the current state of the board to the console.
 
         Empty cells are shown as dots, and player pieces are shown
         with their respective colors.
+
+        Args:
+            players (list, optional): List of Player objects, to display their names and colors.
         """
+        # Print player information if provided
+        if players:
+            for player in players:
+                print(f"{player.name}: {player.color}{self.token}")
+
         for row in self.board:
             for cell in row:
                 if cell == self.empty:

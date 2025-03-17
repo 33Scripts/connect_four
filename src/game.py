@@ -42,7 +42,7 @@ class Game:
         """
         while True:
             clear_screen()
-            self.board.print_board()
+            self.board.print_board(self.players)
 
             try:
                 # Get player's column choice (1-indexed for user, 0-indexed for code)
@@ -54,7 +54,7 @@ class Game:
             # Validate column choice
             if 0 <= col < self.columns:
                 # Try to drop the piece
-                if self.board.drop_piece(col, self.current_player.color):
+                if self.board.drop_piece(col, self.current_player.color, self.players):
                     # Check for win condition
                     if self.board.check_winner():
                         clear_screen()
