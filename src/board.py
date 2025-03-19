@@ -160,14 +160,14 @@ class Board:
         for row in self.board:
             for cell in row:
                 if cell == self.empty:
-                    print(cell, end="  ")
+                    print(cell, end="   ")
                 else:
                     # Print colored player token
-                    print(f"{cell}{self.token}", end="  ")
+                    print(f"{cell}{self.token}", end="   ")
             print()
 
         # Print column numbers for user reference
-        print("  ".join(str(i + 1) for i in range(self.columns)))
+        print("   ".join(str(i + 1) for i in range(self.columns)))
 
     def clear_board(self):
         """Reset the board to empty state.
