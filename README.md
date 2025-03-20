@@ -21,13 +21,13 @@ A simple terminal-based Connect Four game built with Python. Enjoy a classic gam
    Ensure you have Python 3.8 or later installed.
 
 3. **Install Dependencies:**
-   If using [Poetry](https://python-poetry.org/):
+   This project uses [Poetry](https://python-poetry.org/) for dependency management. If you don't have Poetry installed, install it with:
+   ```bash
+   pip install poetry
+   ```
+   Then install the project dependencies:
    ```bash
    poetry install
-   ```
-   Alternatively, install Colorama directly:
-   ```bash
-   pip install colorama
    ```
 
 ## How to Play
