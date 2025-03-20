@@ -23,7 +23,7 @@ A simple terminal-based Connect Four game built with Python. Enjoy a classic gam
 3. **Install Dependencies:**
    If using Poetry:
    ```bash
-   poetry install
+   poetry install --no-root
    ```
    Alternatively, install Colorama directly:
    ```bash
