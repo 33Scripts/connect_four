@@ -21,7 +21,7 @@ A simple terminal-based Connect Four game built with Python. Enjoy a classic gam
    Ensure you have Python 3.8 or later installed.
 
 3. **Install Dependencies:**
-   If using Poetry:
+   If using [Poetry](https://python-poetry.org/):
    ```bash
    poetry install --no-root
    ```
