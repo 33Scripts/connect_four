@@ -13,7 +13,7 @@ A simple terminal-based Connect Four game built with Python. Enjoy a classic gam
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/connect-four.git
+   git clone https://github.com/33Scripts/connect_four.git
    cd connect-four
    ```
 
@@ -34,7 +34,7 @@ A simple terminal-based Connect Four game built with Python. Enjoy a classic gam
 
 Run the game by executing:
 ```bash
-python main.py
+python src/main.py
 ```
 Follow the on-screen instructions to choose players, select colors, and start the game.
 
